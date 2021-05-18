@@ -84,7 +84,7 @@ fn check_viable_slots(api_resp: Resp, only_18plus: bool, only_first_dose: bool) 
             if only_18plus && session.min_age_limit > 18 {
                 continue;
             }
-            if only_first_dose && session.available_capacity_dose1 < 1 {
+            if only_first_dose && session.available_capacity_dose1 < 5 {
                 continue;
             }
             if session.available_capacity > 0 {
